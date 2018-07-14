@@ -1,0 +1,94 @@
+import random
+import sys
+import os
+
+#PRINT LESSON
+print("Lesson 1 - Print statement")
+
+name = "Emmanuel"
+
+print("my name is" ,name)
+
+grocery_list = ['peanutbutter', 'bananas','food', 'drink']
+
+#print grocery_list
+
+print ('I like to eat' ,grocery_list[1] ,'with' ,grocery_list[0])
+
+print( grocery_list[0:3])
+
+print(len(grocery_list))
+
+qoute = "\"always remember you are unique"
+
+multi_line_quote = '''just like
+everyone else'''
+
+print("%s %s %s" % ('I like the quote', qoute, multi_line_quote))
+
+print("I don't like", end="")
+print(" newline")
+print("\n"*10)
+
+
+print("Lesson 2 - Lists")
+print(grocery_list)
+grocery_list.append('Onion')
+grocery_list.insert(1,'Pickle')
+print(grocery_list)
+print("\n"*10)
+
+
+#lesson 3 - Tuples
+print("Lesson 3 - tupples")
+
+pi_tuple = (1,2,3,4,5,6)
+print(pi_tuple)
+new_tuple = list(pi_tuple)
+print(new_tuple)
+len(pi_tuple)
+
+
+#lesson 4 - dictionaries
+print("\n"*10)
+print("Lesson 4 - Dictionaries")
+super_villans = {'Fiddler' : 'Isaac Bowin', 'Captain Cold': 'Leonard Snart',  'Batman': 'Joker', 'Superman': 'Lex Luther'}
+print(super_villans['Batman'])
+print(super_villans.get('Superman'))
+print(super_villans.keys())
+print(super_villans.values())
+
+
+
+#lesson 5 - Conditionals
+print("\n")
+print("I'm going to skip this lesson because it's similar. \n just note that conditional statements end with :")
+
+
+#lesson 6 - Looping
+print("\n"*10)
+print("Lesson 6 - Looping")
+for x in range(0,10):
+	print(x, ' ', end="")
+for y in grocery_list:
+	print(y)
+for z in [2,4,6,8,10]:
+	print(z)
+	
+num_list = [[1,2,3,], [10,20,30], [100, 200, 300]]
+
+for mat in range (0,3):
+	for mat2 in range(0,3):
+		print(num_list[mat][mat2])
+		
+		
+#while loops
+print("while loops")
+
+while(random_num != 15):
+	print(random_num)
+	random_num = random.randrange(0,100)
+	
+	
+	
+
