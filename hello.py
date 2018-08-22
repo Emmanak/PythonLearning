@@ -58,7 +58,8 @@ print(cat.toString())
 #inheritance - making another class with a class and inheriting all it's attributes
 class Dog(Animal):
     def __init__(self, name, height, weight, sound, owner):
-        Animal.__init__(self, name, height, weight, sound)
+        super(Dog, self).__init__(name, height, weight, sound) 
+        
         self.ownerName = owner
         
     def set_owner(self, owner):
